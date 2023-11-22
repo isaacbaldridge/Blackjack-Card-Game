@@ -1,7 +1,7 @@
 import random
 class Deck:
     def __init__(self):
-        # attributes are data that the class uses (here, it is cards, suits, and ranks seen below.)
+# attributes are data that the class uses (here, it is cards, suits, and ranks seen below.)
         self.cards = []
         suits = ["spades", "clubs", "hearts", "diamonds"]
         ranks = [
@@ -19,17 +19,16 @@ class Deck:
             {"rank": "Q", "value": 10},
             {"rank": "K", "value": 10}
         ]
-
         for suit in suits:
             for rank in ranks:
-                # print([suit, rank])
                 self.cards.append([suit, rank])
 
 # methods are functions that a class executes using the attributes (data) in that class.
 # here, it is the shuffle and deal functions.
-
+# the methods are no indented the same as attributes because they are not part of the init instance. (?)
     def shuffle(self):
-        random.shuffle(self.cards)
+        if len(self.cards) > 1:
+            random.shuffle(self.cards)
 
     def deal(self, number):
         cardsDealt = []

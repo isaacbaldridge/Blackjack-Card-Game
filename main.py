@@ -1,4 +1,16 @@
 import random
+
+
+class Card:
+    def __init__(self, suit, rank):
+        # every time a card is created, it will be an Ace of Hearts (change later.)
+        self.suit = suit
+        self.rank = rank
+    # __str__ is called whenever a print function for an instance of the Card class is called.
+    def __str__(self):
+        return self.rank["rank"] + " of " + self.suit
+
+
 class Deck:
     def __init__(self):
 # attributes are data that the class uses (here, it is cards, suits, and ranks seen below.)
@@ -25,7 +37,8 @@ class Deck:
 
 # methods are functions that a class executes using the attributes (data) in that class.
 # here, it is the shuffle and deal functions.
-# the methods are no indented the same as attributes because they are not part of the init instance. (?)
+# the methods are not indented the same as attributes because they are not part of the init method.
+# every defined function is a method (__init__, shuffle, and deal)
     def shuffle(self):
         if len(self.cards) > 1:
             random.shuffle(self.cards)
@@ -38,12 +51,10 @@ class Deck:
                 cardsDealt.append(card)
         return cardsDealt
     
-deck1 = Deck()
-deck2 = Deck()
-deck2.shuffle()
-print(deck1.cards)
-print("---------------------------------")
-print(deck2.cards)
+card1 = Card("hearts", {"rank": "J", "value": 10})
+print(card1)
+
+
 
 
 

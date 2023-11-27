@@ -50,10 +50,11 @@ class Deck:
                 cardsDealt.append(card)
         return cardsDealt
     
-card1 = Card("hearts", {"rank": "J", "value": 10})
-print(card1)
 
 
+class Hand:
+    def __init__(self):
+        self.cards = []
 
 
 

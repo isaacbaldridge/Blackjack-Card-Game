@@ -96,9 +96,27 @@ class Hand:
 # triple single quotes allow you to use single and double quotes in the same string.
 
 
+class Game:
+    
+    def play(self):
+        game_number = 0
+        games_to_play = 0
+        
+        while games_to_play <= 0:
+            try:
+                games_to_play = int(input("How many games do you want to play? "))
+            except:
+                print("You must enter a number.")
+        
+        while game_number < games_to_play:
+            game_number += 1
+            
+            deck = Deck()
+            deck.shuffle()
+        
 
-
-
+g = Game()
+g.play()
 
 
 

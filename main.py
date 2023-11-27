@@ -63,9 +63,21 @@ class Hand:
         
     def calculate_value(self):
         self.value = 0
+        has_ace = False
+        
+        
         for card in self.cards:
             card_value = int(card.rank["value"])
             self.value += card_value
+            if card.rank["rank"] == "A":
+                has_ace = True
+        
+        if has_ace and self.value > 21:
+            self.value -= 10
+    
+    def get_value(self):
+        self.calculate_value()
+        return self.value
 
 
 deck = Deck()

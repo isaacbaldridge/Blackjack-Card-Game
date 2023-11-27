@@ -78,14 +78,24 @@ class Hand:
     def get_value(self):
         self.calculate_value()
         return self.value
+    
+    def is_blackjack(self):
+        return self.get_value() == 21
+    
+    def display(self, show_all_dealer_cards = False):
+        print(f'''{"Dealer's" if self.dealer else "Your"} hand: ''')
+        for index, card in enumerate(self.cards):
+            if index == 0 and self.dealer and not show_all_dealer_cards and not self.is_blackjack():
+                print("hidden")
+            else:
+                print(card)
+            
+        if not self.dealer:
+            print("Value:", self.get_value())
+        print()
+# triple single quotes allow you to use single and double quotes in the same string.
 
 
-deck = Deck()
-deck.shuffle()
-
-hand = Hand()
-hand.add_card(deck.deal(2))
-print(hand.cards[0], hand.cards[1])
 
 
 

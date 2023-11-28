@@ -106,8 +106,8 @@ Jack of Clubs
 Player's hand value = 19
 ```
 
-Dealer's hand
 ```
+Dealer's hand
 5 of Clubs
 Unknown card
 Dealer's maximum possible hand value = 16
@@ -118,8 +118,8 @@ We saw what the good outcome of the risky scenario could look like, but it is st
 
 The player may find themselves in a position similar to the dealer in the previous example.
 
-Player's hand
 ```
+Player's hand
 5 of Hearts
 Jack of Spades
 Player's initial hand value = 15

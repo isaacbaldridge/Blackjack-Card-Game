@@ -132,9 +132,13 @@ However, if the player chose to Hit, they also risk the possibility of increasin
 If either the player or the dealer receive an Ace (value = 11) and one of the royal cards (Jack, Queen, King) (value = 10), then their hand value is automatically calculated to be 21, so they automatically win the game!
 
 ## Set-Up
-0.) Ensure that you have [Python installed] (https://realpython.com/installing-python/#how-to-install-from-the-full-installer) on your machine.
+0.) Ensure that you have [Python installed](https://realpython.com/installing-python/#how-to-install-from-the-full-installer) on your machine.
+
 1.) Fork the repo and clone it down using the SSH key. Copy and paste code below in your preferred directory in your terminal.
 `git clone git@github.com:isaacbaldridge/Blackjack-Card-Game.git`
+
 2.) Run the main.py file.
+
 3.) You will be prompted in the terminal to enter the number of games you wish to play. Use integers.
+
 4.) The rest of the game, you will be prompted to choose the "Hit" or "Stand" options.

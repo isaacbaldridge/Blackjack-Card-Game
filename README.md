@@ -134,6 +134,10 @@ If either the player or the dealer receive an Ace (value = 11) and one of the ro
 ## Set-Up
 0.) Ensure that you have [Python installed](https://realpython.com/installing-python/#how-to-install-from-the-full-installer) on your machine.
 
+**OR**
+
+Play the game on my [Replit](https://replit.com/@baldridgela/Blackjack-Card-Game).
+
 1.) Fork the repo and clone it down using the SSH key. Copy and paste code below in your preferred directory in your terminal.
 `git clone git@github.com:isaacbaldridge/Blackjack-Card-Game.git`
 
